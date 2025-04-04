@@ -1,0 +1,43 @@
+# Project: ProjetoHabitoApp
+# Makefile created by Embarcadero Dev-C++ 6.3
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o telaInicial.o configuracao.o criarHabito.o verHabito.o historico.o
+LINKOBJ  = main.o telaInicial.o configuracao.o criarHabito.o verHabito.o historico.o
+LIBS     = -L"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/lib" -L"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/include" -I"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
+CXXINCS  = -I"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/include" -I"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Users/PRISCILA/Documents/Programação/Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
+BIN      = ProjetoHabitoApp.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+DEL      = C:\Users\PRISCILA\Documents\Programação\Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup\devcpp.exe INTERNAL_DEL
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${DEL} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+telaInicial.o: telaInicial.c
+	$(CC) -c telaInicial.c -o telaInicial.o $(CFLAGS)
+
+configuracao.o: configuracao.c
+	$(CC) -c configuracao.c -o configuracao.o $(CFLAGS)
+
+criarHabito.o: criarHabito.c
+	$(CC) -c criarHabito.c -o criarHabito.o $(CFLAGS)
+
+verHabito.o: verHabito.c
+	$(CC) -c verHabito.c -o verHabito.o $(CFLAGS)
+
+historico.o: historico.c
+	$(CC) -c historico.c -o historico.o $(CFLAGS)
