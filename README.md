@@ -19,6 +19,27 @@
 <h3>📝 Detalhes Técnicos</h3>
 <p>  - Desenvolvido em C puro.<br>
     - Sistema baseado em CRUD.<br>
-    - Armazenamento local de dados.<br>
+    - Armazenamento local de dados durante execução.<br>
     - Interface de linha de comando (CLI).<br>
     - Controle de progresso diário de hábitos.</p>
+
+<h3>📊 Exemplo de Uso</h3>
+<p>=== App Hábito Diário ===<br>
+
+1 - Novo Hábito.<br>
+2 - Seus Hábitos.<br>
+3 - Editar Hábito.<br>
+4 - Deletar Hábito<br>
+5 - Histórico.<br>
+0 - Sair.<br>
+
+Escolha uma opção: </p>
+
+<h3>📄 Licença</h3>
+<p>Este perfil e projetos relacionados estão licenciados sob a 
+<a href="LICENSE" target="_blank">Licença MIT</a> - 
+veja o arquivo <a href="LICENSE" target="_blank">LICENSE</a> para detalhes.
+
+<a href="https://opensource.org/licenses/MIT" target="_blank">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="Licença MIT">
+</a></p>
