@@ -36,7 +36,7 @@
 Escolha uma opção: </p>
 
 <h3>📄 Licença</h3>
-<p>Este perfil e projetos relacionados estão licenciados sob a 
+<p>Este projeto está licenciado sob a 
 <a href="LICENSE" target="_blank">Licença MIT</a> - 
 veja o arquivo <a href="LICENSE" target="_blank">LICENSE</a> para detalhes.
 
