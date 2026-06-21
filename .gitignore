@@ -1,12 +1,10 @@
-# Arquivos compilados
+
 *.o
 *.obj
 *.exe
-
-# Arquivos do Dev-C++
+*.win
+*.dev
 *.layout
 Makefile.win
-
-# Arquivos temporários do Windows
 Thumbs.db
 desktop.ini
