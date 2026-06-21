@@ -71,5 +71,5 @@ void menuPrincipal(){			//Código da Função do Menu Principal
         	printf("\n ERRO! Numero %d eh invalido, selecione outro.\n-------------------------------------------\n", opcaoInicial);
         	sleep(3);
     }
-  }while(opcaoInicial != 1, 2, 3, 4, 5);
+  }while(opcaoInicial < 1 || opcaoInicial > 5);
 }
