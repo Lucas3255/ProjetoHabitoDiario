@@ -3,7 +3,6 @@
 *.obj
 *.exe
 *.win
-*.dev
 *.layout
 Makefile.win
 Thumbs.db
