@@ -1,48 +1,107 @@
-<h1>Gerenciador de Hábitos Diários</h1>
-<p>Um programa em linguagem C para gerenciar seus hábitos diários com funcionalidades completas de CRUD (Create, Read, 
-  Update, Delete).</p>
+# Gerenciador de Hábitos Diários
 
-<h3>📋 Sobre o Projeto</h3>
-<p>Este é meu primeiro projeto desenvolvido em linguagem C, com o objetivo de criar um sistema simples mas eficiente 
-  para acompanhar hábitos diários. O programa permite registrar, acompanhar e gerenciar seus hábitos com marcação diária 
-  até sua conclusão.</p>
+Um programa em linguagem C para gerenciar hábitos diários, com funcionalidades completas de CRUD (Create, Read, Update, Delete) através de uma interface de linha de comando.
 
-<h3>✨ Funcionalidades</h3>
-<p>  - Criar hábitos: Defina novos hábitos com nome, duração, tipo e descrição.<br>
-    - Listar hábitos: Visualize todos os hábitos existentes.<br>
-    - Histórico completo: Acesse o histórico de hábitos criados, concluídos ou apagados.<br>
-    - Atualizar hábitos: Modifique informações dos hábitos existentes.<br>
-    - Deletar hábitos: Remova hábitos do seu registro.<br>
-    - Marcação diária: Registre o progresso diário de cada hábito.<br>
-    - Personalização: Customize aspectos do programa conforme sua preferência.</p>
+## 📋 Sobre o Projeto
 
-<h3>📝 Detalhes Técnicos</h3>
-<p>  - Desenvolvido em C puro.<br>
-    - Sistema baseado em CRUD.<br>
-    - Armazenamento local de dados durante execução.<br>
-    - Interface de linha de comando (CLI).<br>
-    - Controle de progresso diário de hábitos.</p>
+Este foi meu primeiro projeto desenvolvido em linguagem C, com o objetivo de criar um sistema simples mas eficiente para acompanhar hábitos diários. O programa permite registrar, acompanhar e gerenciar hábitos com marcação diária até sua conclusão.
 
-<h3>📊 Exemplo de Uso</h3>
-<p>=== App Hábito Diário ===<br>
+## ✨ Funcionalidades
 
-1 - Novo Hábito.<br>
-2 - Seus Hábitos.<br>
-3 - Editar Hábito.<br>
-4 - Deletar Hábito<br>
-5 - Histórico.<br>
-0 - Sair.<br>
+- **Criar hábitos**: defina novos hábitos com nome, categoria, duração e descrição
+- **Visualizar hábitos**: liste todos os hábitos em andamento
+- **Histórico completo**: acesse o histórico de hábitos criados e concluídos
+- **Marcação diária**: registre o progresso diário de cada hábito
+- **Excluir hábitos**: remova hábitos do seu registro
+- **Personalização**: customize a cor da interface do programa
 
-Escolha uma opção: </p>
+## 📝 Detalhes Técnicos
 
-<h3>📄 Licença</h3>
-<p>Este projeto está licenciado sob a 
-<a href="LICENSE" target="_blank">Licença MIT</a> - 
-veja o arquivo <a href="LICENSE" target="_blank">LICENSE</a> para detalhes.
+- Desenvolvido em **C puro**
+- Sistema baseado em **structs** para organização dos dados
+- Armazenamento local em memória durante a execução
+- Interface de linha de comando (CLI)
+- Controle de progresso diário através de cálculo percentual
 
-<a href="https://opensource.org/licenses/MIT" target="_blank">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="Licença MIT">
-</a></p>
+## 📁 Estrutura do Projeto
 
-<h3>👨‍💻 Autor</h3>
-<p>Lucas Henrique Dias - lucasfaculdade2025@gmail.com<br> LinkedIn: https://www.linkedin.com/in/lucas-henrique-dias-345666346/</p>
+```
+gerenciador-habitos-diarios/
+├── include/          # Arquivos de cabeçalho (.h)
+│   ├── configuracao.h
+│   ├── criarHabito.h
+│   ├── historico.h
+│   ├── main.h
+│   ├── telaInicial.h
+│   └── verHabito.h
+├── src/               # Implementação das funcionalidades (.c)
+│   ├── configuracao.c
+│   ├── criarHabito.c
+│   ├── historico.c
+│   ├── telaInicial.c
+│   └── verHabito.c
+└── main.c             # Ponto de entrada do programa
+```
+
+## 🚀 Como Rodar o Projeto
+
+### 1. Instalar o compilador
+
+Baixe e instale o **Dev-C++** (Embarcadero_Dev-Cpp_6.3_TDM-GCC_9.2_Setup.exe):
+
+➡️ [Download Dev-C++](https://github.com/Embarcadero/Dev-Cpp/releases)
+
+### 2. Clonar o repositório
+
+```bash
+git clone https://github.com/lucas-henriquedias/gerenciador-habitos-diarios.git
+```
+
+### 3. Abrir o projeto
+
+No Dev-C++, vá em **Arquivo → Abrir Documento** e selecione o arquivo `gerenciador-habitos-diarios.dev`.
+
+### 4. Configurar a pasta de Include (se necessário)
+
+Caso o compilador não encontre algum arquivo `.h`:
+
+1. Vá em **Project → Project Options → Arquivos/Diretórios → Diretórios de Include**
+2. Adicione o caminho completo da pasta `include/` do projeto
+3. Clique em **OK**
+
+### 5. Compilar e executar
+
+Aperte **F9** para compilar ou **F11** para compilar e executar o programa.
+
+## 📊 Exemplo de Uso
+
+```
+=== App Hábito Diário ===
+
+1 - Novo Hábito.
+2 - Seus Hábitos.
+3 - Editar Hábito.
+4 - Deletar Hábito
+5 - Histórico.
+0 - Sair.
+
+Escolha uma opção:
+```
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE) — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+[![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## 👨‍💻 Autor
+
+- Lucas Henrique Dias de Medeiros.
+- Arthur Lopes Holanda.
+- Nayara Karla.
+- Amanda Marta.
+- Daniel José Conrdeiro.
+
+## 📞 Contato
+- E-mail: lucasfaculdade2025@gmail.com
+- LinkedIn: [linkedin.com/in/lucas-henrique-dias-345666346](https://www.linkedin.com/in/lucas-henrique-dias-345666346/)
