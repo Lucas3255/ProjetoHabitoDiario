@@ -4,7 +4,8 @@
 #include <unistd.h>			//
 #include <locale.h>			//
 #include <time.h>			//
-#include "configuracao.h"	////
+#include "configuracao.h"	//
+#include "telaInicial.h"	////
 
 void configuracao(){		//função de configuração/personalização
   int mudarCor;
@@ -58,5 +59,5 @@ void configuracao(){		//função de configuração/personalização
         printf("\n ERRO! %d eh invalido.\n-------------------------------------------\n", mudarCor);
         sleep(3);			//código de pausa temporaria
     }
-  }while(mudarCor != 1, 2, 3, 4, 5, 6, 7);	//fim do loop
+  }while(mudarCor < 1 || mudarCor > 7);	//fim do loop
 }

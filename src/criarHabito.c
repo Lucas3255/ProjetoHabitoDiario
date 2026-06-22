@@ -7,7 +7,8 @@
 #include "main.h"			//
 #include "verHabito.h"		//
 #include "historico.h"		//
-#include "criarHabito.h"	////
+#include "criarHabito.h"	//
+#include "telaInicial.h"	////
 #define maxHistorico 50
 
 struct habito{				//declaração da struct de Habitos.
@@ -96,7 +97,7 @@ void criarHabito(){
         printf("\n ERRO! Valor invalido (%d).", escolha);	//mensagem de erro.
         sleep(3);			//pausa o programa por alguns segundos.
     }
-  }while(escolha != 1, 2, 3, 4, 5, 6, 7);
+  }while(escolha < 1 || escolha > 7);
 }
 
 void habitoGeral(){			//lógica p0r traz da função de criar hábitos.

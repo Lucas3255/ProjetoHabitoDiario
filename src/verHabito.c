@@ -94,7 +94,7 @@ void verHabito(){	//função principal de ver Habito.
 					printf("\n ERRO! opcao invalida (%d).", escolha);
 					sleep(3);	//pausa temporária do programa.
 			}
-		}while(escolha != 1, 2, 3);		//fim do loop.
+		}while(escolha < 1 || escolha > 3);		//fim do loop.
 	}
 }
 
